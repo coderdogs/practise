@@ -18,7 +18,11 @@ public class StringUtil {
         out.println(symtemOut("dwa", "dwadw","dwadaw"));
     }
 
-
+    /**
+     * reversalString 将字符串倒序
+     * @param input
+     * @return
+     */
     private static String reversalString(String input){
         if(input==null || input==""){
             return "";
@@ -31,6 +35,13 @@ public class StringUtil {
         return stringBuffer.toString();
     }
 
+    /**
+     * replace 将已有的字符进行替换
+     * @param source
+     * @param charSource
+     * @param teacher
+     * @return
+     */
     private static String replace(String source, char charSource, char teacher) {
 
         char[] chars1 = source.toCharArray();
@@ -46,6 +57,11 @@ public class StringUtil {
         return stringBuffer.toString();
 }
 
+    /**
+     * 去掉前后的空格
+     * @param value
+     * @return
+     */
     private static String cancel(String value) {
         char[] values = value.toCharArray();
         StringBuffer stringBuffer = new StringBuffer();
@@ -61,6 +77,11 @@ public class StringUtil {
         return ((st > 0) || (len < values.length)) ? value.substring(st, len) : value;
     }
 
+    /**
+     * 将多个字符串进行连接(不限制字符串个数)
+     * @param args
+     * @return
+     */
     public static String symtemOut(String... args) {
         StringBuilder stringBuilder = new StringBuilder();
         for (String arg : args) {

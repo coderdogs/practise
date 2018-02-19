@@ -1,7 +1,7 @@
 package com.weimob.util;
 import java.util.*;
 import java.io.*;
-/**
+/**查找目录中应有的文件
  * Created by Administrator on 2018/2/17.
  */
 public class ListFile {
