@@ -13,7 +13,7 @@ public enum ScriptEnum {
     private String name;
 
     public static void main(String[] args){
-
+        System.out.print(ScriptEnum.JSENGINE.getName());
     }
     ScriptEnum(int i, String javascript) {
 
