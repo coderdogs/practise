@@ -8,16 +8,6 @@ import static java.lang.System.*;
  * Created by Administrator on 2018/2/17.
  */
 public class StringUtil {
-    public static void main(String[] args){
-        out.print(reversalString(null));
-
-        out.print(replace("12vr",'e','v'));
-
-        out.print(cancel(" h n h "));
-
-        out.println(symtemOut("dwa", "dwadw","dwadaw"));
-    }
-
     /**
      * reversalString 将字符串倒序
      * @param input
@@ -43,7 +33,6 @@ public class StringUtil {
      * @return
      */
     private static String replace(String source, char charSource, char teacher) {
-
         char[] chars1 = source.toCharArray();
         StringBuffer stringBuffer = new StringBuffer();
         for (int i = 0; i < chars1.length; i++) {
@@ -89,5 +78,4 @@ public class StringUtil {
         }
         return stringBuilder.toString();
     }
-
 }
