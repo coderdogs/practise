@@ -9,30 +9,23 @@ public enum ScriptEnum {
     JSENGINE(1,"js"),
     CENGINE(2,"c");
     private int type;
-
     private String name;
-
     public static void main(String[] args){
-        System.out.print(ScriptEnum.JSENGINE.getName());
+        System.out.print(ScriptEnum.JSENGINE);
     }
-    ScriptEnum(int i, String javascript) {
-
+    ScriptEnum(int i,String javascript){
+        javascript="function show(p1,p2){return (p1+p2)}";
     }
-
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
 
         this.name = name;
     }
-
     public int getType() {
         return type;
     }
-
     public void setType(int type) {
         this.type = type;
     }
